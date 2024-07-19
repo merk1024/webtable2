@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main_container">
+        <h1>Exam Schedule</h1>
+        <table id="examTable" border="1">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contentEditable="true">Class 1</td>
+                    <td contentEditable="true">Mathematics</td>
+                    <td contentEditable="true">2024-07-19</td>
+                    <td contentEditable="true">09:00 AM</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addRowBtn">Add Row</button>
+        <div class="button_container">
+            <input type="button" id="saveBtn" value="Save">
+            <input type="button" id="loadBtn" value="Load">
+            <input type="button" id="clearBtn" value="Clear">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
