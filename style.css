@@ -53,13 +53,21 @@ button:hover {
     background-color: #5A83C4;
 }
 
+select, input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #eaf6ff;
+}
+
 .button_container {
     text-align: right;
 }
 
 .button_container input {
     background-color: #6A93D4;
-    color: white; 
+    color: white;
     border: none;
     padding: 10px;
     margin-left: 5px;
@@ -68,4 +76,14 @@ button:hover {
 
 .button_container input:hover {
     background-color: #5A83C4;
+}
+
+#recommendation_container {
+    margin-top: 20px;
+}
+
+#recommendations {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
 }

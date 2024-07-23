@@ -16,15 +16,35 @@
                     <th>Subject</th>
                     <th>Date</th>
                     <th>Time</th>
+                    <th>Room</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td contentEditable="true">Class 1</td>
-                    <td contentEditable="true">Mathematics</td>
-                    <td contentEditable="true">2024-07-19</td>
-                    <td contentEditable="true">09:00 AM</td>
+                    <td>
+                        <select class="subjectSelect">
+                            <option value="mathematics">Mathematics</option>
+                            <option value="physical education">Physical Education</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="biology">Biology</option>
+                        </select>
+                    </td>
+                    <td><input type="date" class="dateInput" value="2024-07-24"></td>
+                    <td>
+                        <select class="timeSelect">
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </td>
+                    <td contentEditable="true">103</td>
                     <td><button onclick="deleteRow(this)">Delete</button></td>
                 </tr>
             </tbody>
@@ -34,6 +54,10 @@
             <input type="button" id="saveBtn" value="Save">
             <input type="button" id="loadBtn" value="Load">
             <input type="button" id="clearBtn" value="Clear">
+        </div>
+        <div id="recommendation_container">
+            <h2>Recommendations</h2>
+            <div id="recommendations"></div>
         </div>
     </div>
     <script src="main.js"></script>
